@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.21"></script>
+    <script>
+      var GUI = lil.GUI;
+    </script>
+    <script src="main.js"></script>
+
+    <style>
+      @keyframes slideInBlur {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+          filter: blur(5px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+          filter: blur(0);
+        }
+      }
+
+      .texte-style-degrade {
+        animation: slideInBlur 0.5s ease-out forwards;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .active-btn {
+        background-color: pink !important;
+        border-radius: 20px;
+        transform: scale(1.2) translateY(-15px) !important;
+        box-shadow: 0 15px 25px rgba(255, 20, 147, 0.4);
+        transform: translateY(-100px) scale(1.1);
+        z-index: 10;
+      }
+
+      #texte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #content {
+        padding-top: 50px;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+      }
+      #content button {
+        background-color: palevioletred;
+        border-style: none;
+        cursor: pointer;
+        transition:
+          transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          background-color 0.3s,
+          border-radius 0.3s;
+        transform-origin: bottom;
+      }
+      #content button:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="texte"></div>
+    <div id="content"></div>
+  </body>
+</html>
