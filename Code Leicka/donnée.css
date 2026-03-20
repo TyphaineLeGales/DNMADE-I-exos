@@ -1,0 +1,20 @@
+body {
+  background-color: #f8b195;
+  margin: 0;
+}
+
+.container {
+  background-color: #c06c84;
+  color: #6c5b7b;
+  height: auto;
+  width: auto;
+  position: relative;
+  margin-left: 60%;
+  font-family: cursive;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+}
