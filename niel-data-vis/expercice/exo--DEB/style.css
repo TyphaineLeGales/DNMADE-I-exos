@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(202, 179, 149);
+}
+.title {
+  font-size: 50px;
+  color: rgb(60, 34, 10);
+  text-shadow: rgba(139, 69, 19, 0.437) 2px 2px;
+}
+.txt {
+  color: aliceblue;
+  background-color: blueviolet;
+}
