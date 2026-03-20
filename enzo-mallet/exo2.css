@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color :#C44C51;
+}
+
+.bar:hover{
+    transition: 0.2s;
+    background-color: darkviolet;
+}
