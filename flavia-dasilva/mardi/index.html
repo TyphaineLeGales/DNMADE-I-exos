@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .titre {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+      }
+
+      #recipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 20px;
+      }
+      #recipe p {
+        margin: 0;
+        width: 620px;
+        text-align: justify;
+      }
+
+      #ingredient {
+        padding: 10px 30px;
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+      }
+
+      #ingredient button {
+        background-color: palevioletred;
+        color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-style: none;
+      }
+
+      #ingredient button:hover {
+        background-color: pink;
+      }
+
+      #sous-titre {
+        padding: 10px 30px;
+      }
+      #recette {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 50px;
+        padding: 10px 30px;
+      }
+
+      #nom {
+        padding: 10px 30px;
+      }
+
+      .bloc-recette {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bloc-recette img {
+        width: 200px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="titre">Chocolate Avocado Mousse</h1>
+
+    <div id="recipe">
+      <img
+        src="img/Chocolate Avocado Mousse.jpeg"
+        alt="Mousse Chocolat Avocat"
+      />
+    </div>
+
+    <h2 id="sous-titre">Liste d'ingrédients</h2>
+    <div id="ingredient"></div>
+
+    <div id="suggestion">
+      <div id="nom"></div>
+      <div id="recette"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
