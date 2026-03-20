@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+
+  background-color: rgb(244, 181, 109);
+}
+.image {
+  height: 100%;
+  background-image: url("img/pexels-mattia-verga-3795669-5624201.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px -500px;
+  background-repeat: no-repeat;
+  /*position: fixed;*/
+  z-index: 1;
+}
+
+.content {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: end;
+  z-index: 7;
+  margin-bottom: 10%;
+}
+.rec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rec:hover {
+  height: 100px;
+}
+.post {
+  height: 90vh;
+  width: 85%;
+  background-color: rgba(250, 235, 215, 0.722);
+  margin-left: 9vh;
+  padding: 50px 40px 50px 40px;
+  font-size: 30px;
+}
+.data {
+  font-size: 50px;
+  color: rgb(38, 2, 2);
+  margin-bottom: -50px;
+  padding-left: 70vh;
+}
