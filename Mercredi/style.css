@@ -1,0 +1,34 @@
+body {
+    background-color: #13243a;
+}
+.bar {
+   
+    min-width: 250px;
+    flex:1;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.bar:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.graphContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+h1, h3{
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
