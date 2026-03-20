@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Posts Explorer</title>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.21"></script>
+  <script>var GUI = lil.GUI;</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Posts Explorer</h1>
+
+  <div id="color-control">
+    <label>Couleur du fond :</label>
+    <input type="color" id="bgPicker" value="#ffffff" />
+  </div>
+
+  <div id="layout">
+    <div id="bars"></div>
+    <div id="detail">
+      <p id="detail-placeholder">Clique sur une barre pour voir le post</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
